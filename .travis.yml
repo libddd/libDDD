@@ -3,9 +3,10 @@ os: osx
 osx_image: xcode8.3
 
 compiler: gcc
-env: GCCVER='5' CXX_COMPILER='g++-5' C_COMPILER='gcc-5'
+env: GCCVER='7' CXX_COMPILER='g++-7' C_COMPILER='gcc-7'
 
 before_script:
+  - brew install gcc
   - cd ${TRAVIS_BUILD_DIR}
   - export CXX=${CXX_COMPILER}
   - export CC=${C_COMPILER}
