@@ -6,6 +6,7 @@ compiler: gcc
 env: GCCVER='7' CXX_COMPILER='g++-7' C_COMPILER='gcc-7'
 
 before_script:
+  - rm /usr/local/include/c++
   - brew install gcc
   - cd ${TRAVIS_BUILD_DIR}
   - export CXX=${CXX_COMPILER}
