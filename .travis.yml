@@ -11,9 +11,9 @@ before_script:
   - cd ${TRAVIS_BUILD_DIR}
   - export CXX=${CXX_COMPILER}
   - export CC=${C_COMPILER}
-  - export AR=gcc-ar-${GCCVER}
-  - export RANLIB=gcc-ranlib-${GCCVER}
-  - export NM=gcc-nm-${GCCVER}
+#  - export AR=gcc-ar-${GCCVER}
+#  - export RANLIB=gcc-ranlib-${GCCVER}
+#  - export NM=gcc-nm-${GCCVER}
 # - export PATH=$HOME/.local/bin:/usr/local/bin:/usr/bin:$PATH
 
 script : 
